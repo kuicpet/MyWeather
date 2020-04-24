@@ -12,13 +12,13 @@ body{
     justify-items: center;
     font-weight: 400;
     color: #E4FDE1 !important;
-    background: #02AAB0;
+    background:  #EC38BC;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(45.34deg, #8163bd 1%, #beb3eb 42%, #9ea0ed 67%, #433f93 100%);
+    background: -webkit-linear-gradient(45deg,#03001E,#7303C0 ,  #EC38BC);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45.34deg,  #8163bd 1%, #beb3eb 42%, #9ea0ed 67%, #433f93 100%);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-  
+    background: linear-gradient(45deg,#03001E,#7303C0 ,   #EC38BC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
@@ -29,12 +29,11 @@ hr{
     border: 1px solid #E4FDE1 !important;
     width: 25%;
 }
-h1{
-    font-size: 3rem !important;
-}
+
 .btn-primary{
     background-color: transparent !important;
     outline: none !important;
+    border: 1px solid #E4FDE1 !important;
     cursor: pointer;
     border-radius: 50px !important;
     font-size: 1.2rem !important;
@@ -61,19 +60,29 @@ input{
     color: #E4FDE1 !important;
     font-size: 1.5rem !important;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }  
 ul{
     list-style: none !important;
 }
-
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
   
 .ajax-section .cities{
    display: grid;
    grid-template-columns: repeat(4,1fr);
    grid-gap: 10px;
+   grid-template-rows: auto;
 }
 .ajax-section .city{
     position: relative;
-    border-radius: 20px;
 }
 .ajax-section .city::after {
     content: '';
@@ -84,7 +93,6 @@ ul{
     left: 5%;
     z-index: -1;
     opacity: 0.3;
-    border-radius: 20px;
   }
   
   .ajax-section figcaption {
